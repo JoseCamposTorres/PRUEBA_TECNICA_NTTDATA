@@ -1,26 +1,25 @@
 # ================================================================
-# 🧩 **PRUEBA TÉCNICA** - Instrucciones de instalación y ejecución
+# PRUEBA TÉCNICA - Instrucciones de instalación y ejecución
 # ================================================================
 
-# Clonar el repositorio
+# Clonación del repositorio
 echo "Clonando el repositorio..."
 git clone https://github.com/JoseCamposTorres/PRUEBA_TECNICA_NTTDATA.git
 cd PRUEBA_TECNICA_NTTDATA
 
 # =======================================================================
-# 🛠️ **BACKEND - API REST con Spring Boot**
+# BACKEND - API REST con Spring Boot
 # =======================================================================
-echo "========================= BACKEND ========================="
-echo "Accediendo al directorio del backend..."
+echo "Accediendo al directorio del Backend..."
 cd BACKEND
 
-# Requisitos previos
-echo "Asegúrate de tener lo siguiente instalado para el Backend:"
+# Requisitos para Backend
+echo "Requisitos previos para el Backend:"
 echo "- Java 21+"
 echo "- Maven 3.2+"
 echo "- PostgreSQL"
 
-# Configurar el archivo application.properties
+# Configuración del archivo application.properties
 echo "Configurando el archivo 'application.properties'..."
 cat <<EOL > src/main/resources/application.properties
 server.port=8080
@@ -37,17 +36,16 @@ echo "Iniciando la aplicación Backend..."
 ./mvnw spring-boot:run
 
 # Documentación de la API
-echo "Documentación Swagger disponible en: http://localhost:8080/api/v1/swagger-ui/index.html"
+echo "La documentación de la API está disponible en: http://localhost:8080/api/v1/swagger-ui/index.html"
 
 # =======================================================================
-# 🌐 **FRONTEND - React + Vite**
+# FRONTEND - React + Vite
 # =======================================================================
-echo "========================= FRONTEND ========================="
-echo "Accediendo al directorio del frontend..."
+echo "Accediendo al directorio del Frontend..."
 cd ../frontend
 
-# Requisitos previos
-echo "Asegúrate de tener lo siguiente instalado para el Frontend:"
+# Requisitos para Frontend
+echo "Requisitos previos para el Frontend:"
 echo "- Node.js (v16+)"
 echo "- npm o yarn"
 
@@ -56,12 +54,12 @@ echo "Instalando dependencias del Frontend..."
 npm install
 
 # Ejecutar el Frontend en modo desarrollo
-echo "Iniciando el servidor de desarrollo..."
+echo "Iniciando el Frontend en modo desarrollo..."
 npm run dev
 
 # =======================================================================
-# 🚀 **¡Listo para usar!**
+# ¡Todo listo para usar!
 # =======================================================================
-echo "Ambos servidores (Backend y Frontend) están corriendo."
-echo "Accede a la aplicación Frontend en: http://localhost:3000"
-echo "Accede a la documentación de la API Backend en: http://localhost:8080/api/v1/swagger-ui/index.html"
+echo "Backend corriendo en: http://localhost:8080"
+echo "Frontend corriendo en: http://localhost:3000"
+echo "Documentación de la API en: http://localhost:8080/api/v1/swagger-ui/index.html"
