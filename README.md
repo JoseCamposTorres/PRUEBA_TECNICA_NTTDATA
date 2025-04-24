@@ -1,16 +1,15 @@
-# ================================================================
+
 # PRUEBA TÉCNICA - Instrucciones de instalación y ejecución
-# ================================================================
 
 # 1. Clonar el repositorio
 echo "🔽 Clonando el repositorio..."
 git clone https://github.com/JoseCamposTorres/PRUEBA_TECNICA_NTTDATA.git
 cd PRUEBA_TECNICA_NTTDATA
 
-# =======================================================================
+
 # 🛠️ BACKEND - API REST con Spring Boot
-# =======================================================================
-echo -e "\n========================== BACKEND ==========================="
+
+echo -e "\n===== BACKEND ======"
 echo "Accediendo al directorio del Backend..."
 cd BACKEND
 
@@ -41,10 +40,10 @@ echo -e "\n**Iniciando la aplicación Backend...**"
 echo -e "\n**La documentación de la API está disponible en:**"
 echo "http://localhost:8080/api/v1/swagger-ui/index.html"
 
-# =======================================================================
+
 # 🌐 FRONTEND - React + Vite
-# =======================================================================
-echo -e "\n========================== FRONTEND ==========================="
+
+echo -e "\n====== FRONTEND ======"
 echo "Accediendo al directorio del Frontend..."
 cd ../frontend
 
@@ -61,10 +60,9 @@ npm install
 echo -e "\n**Iniciando el Frontend en modo desarrollo...**"
 npm run dev
 
-# =======================================================================
 # 🚀 ¡Todo listo para usar!
-# =======================================================================
+
 echo -e "\n**¡Todo listo!**"
 echo "✅ Backend corriendo en: http://localhost:8080"
-echo "✅ Frontend corriendo en: http://localhost:3000"
+echo "✅ Frontend corriendo en: http://localhost:5173"
 echo "📚 Documentación de la API en: http://localhost:8080/api/v1/swagger-ui/index.html"
