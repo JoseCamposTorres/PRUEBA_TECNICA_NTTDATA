@@ -33,13 +33,13 @@ cd PRUEBA_TECNICA_NTTDATA
 cd BACKEND
 
 # 2. Requisitos previos para el backend
-# - Java 21+
-# - Maven 3.2+
-# - PostgreSQL
+ - Java 21+
+ - Maven 3.2+
+ - PostgreSQL
 
 # 3. Configuración del archivo `application.properties`
-# Ubicación: src/main/resources/application.properties
-# Aquí debes configurar la base de datos y otros parámetros importantes
+  Ubicación: src/main/resources/application.properties
+  Aquí debes configurar la base de datos y otros parámetros importantes
 
 echo "Configurando el archivo application.properties..."
 cat <<EOL > src/main/resources/application.properties
@@ -52,11 +52,11 @@ spring.datasource.password=74757759
 spring.datasource.driver-class-name=org.postgresql.Driver
 
 # 4. Ejecutar el backend
-# Asegúrate de tener PostgreSQL en funcionamiento en tu máquina.
+  Asegúrate de tener PostgreSQL en funcionamiento en tu máquina.
 ./mvnw spring-boot:run
 
 # 5. Acceder a la documentación Swagger
-# Una vez que la aplicación esté en ejecución, abre el navegador y ve a la siguiente URL:
+  Una vez que la aplicación esté en ejecución, abre el navegador y ve a la siguiente URL:
 echo "Accede a la documentación de la API en: http://localhost:8080/api/v1/swagger-ui/index.html"
 
 # =======================================================================
