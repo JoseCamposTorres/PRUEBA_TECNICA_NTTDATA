@@ -37,7 +37,7 @@ cd  BACKEND
 
 - Java 21
 - Maven 3.2+
-- Postgres 
+- postgreSQL 
 
 ### 2. Configurar el archivo `application.properties`
 
