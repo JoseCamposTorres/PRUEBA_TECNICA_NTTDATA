@@ -21,56 +21,62 @@ El frontend está desarrollado con **React** y el backend con **Spring Boot**.
 
 ## ⚙️ Instalación y Uso
 
-### 1. Clonar el repositorio
-
-```bash
+# Clonar el repositorio
 git clone https://github.com/JoseCamposTorres/PRUEBA_TECNICA_NTTDATA.git
 cd PRUEBA_TECNICA_NTTDATA
 
-# 🛠️ Backend - API REST con Spring Boot
+# =======================================================================
+# 🛠️ BACKEND - API REST con Spring Boot
+# =======================================================================
 
-cd  BACKEND
+# 1. Acceder al directorio del backend
+cd BACKEND
 
-## ⚙️ Configuración y ejecución
+# 2. Requisitos previos para el backend
+# - Java 21+
+# - Maven 3.2+
+# - PostgreSQL
 
-### 1. Requisitos previos
+# 3. Configuración del archivo `application.properties`
+# Ubicación: src/main/resources/application.properties
+# Aquí debes configurar la base de datos y otros parámetros importantes
 
-- Java 21
-- Maven 3.2+
-- postgreSQL 
-
-### 2. Configurar el archivo `application.properties`
-
-Ubicación: `src/main/resources/application.properties`
-
-```properties
+echo "Configurando el archivo application.properties..."
+cat <<EOL > src/main/resources/application.properties
 server.port=8080
 
-# Configuración base de datos
+# Configuración de base de datos
 spring.datasource.url=jdbc:postgresql://localhost:5432/system_prueba
 spring.datasource.username=postgres
 spring.datasource.password=74757759
 spring.datasource.driver-class-name=org.postgresql.Driver
 
-# Ejecutar Aplicación
+# 4. Ejecutar el backend
+# Asegúrate de tener PostgreSQL en funcionamiento en tu máquina.
 ./mvnw spring-boot:run
 
-# DOCUMENTACION
-http://localhost:8080/api/v1/swagger-ui/index.html#/
+# 5. Acceder a la documentación Swagger
+# Una vez que la aplicación esté en ejecución, abre el navegador y ve a la siguiente URL:
+echo "Accede a la documentación de la API en: http://localhost:8080/api/v1/swagger-ui/index.html"
 
+# =======================================================================
+# 🌐 FRONTEND - React + Vite
+# =======================================================================
 
+# 1. Acceder al directorio del frontend
+cd ../frontend
 
-# 🌐 Frontend - React + Vite
-## ⚙️ Configuración y ejecución
+# 2. Requisitos previos para el frontend
+# - Node.js (v16+)
+# - npm o yarn
 
-### 1. Requisitos
-
-- Node.js (v16+)
-- npm o yarn
-
-### 2. Instalar Dependencias
+# 3. Instalar dependencias del frontend
 npm install
 
-### 3. Ejecutar Desarrollo
+# 4. Ejecutar la aplicación en modo desarrollo
 npm run dev
+
+# =======================================================================
+# ¡Listo!
+# =======================================================================
 
