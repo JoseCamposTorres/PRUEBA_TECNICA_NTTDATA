@@ -1,0 +1,6 @@
+/* Ejemplo de contenido de index.css */
+body, html, #root {
+  height: 100%; /* Intenta forzar la altura al 100% del viewport */
+  margin: 0;
+  padding: 0;
+}
